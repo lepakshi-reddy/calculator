@@ -9,22 +9,55 @@
     <div class="calculator">
         <div id="display">0</div>
         <div class="buttons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>+</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>*</button>
-            <button>c</button>
-            <button>0</button>
-            <button>=</button>
-            <button>/</button>
+
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>My Calculator</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+
+            <body>
+
+                <div class="calculator">
+                    <h1>My Calculator</h1>
+
+                    <div id="display">0</div>
+
+                    <div class="buttons">
+                        <button onclick="clearCalculator()">C</button>
+                        <button onclick="deleteLast()">DEL</button>
+                        <button onclick="chooseOperator('/')">/</button>
+                        <button onclick="chooseOperator('*')">*</button>
+
+                        <button onclick="pressNumber('7')">7</button>
+                        <button onclick="pressNumber('8')">8</button>
+                        <button onclick="pressNumber('9')">9</button>
+                        <button onclick="chooseOperator('-')">-</button>
+
+                        <button onclick="pressNumber('4')">4</button>
+                        <button onclick="pressNumber('5')">5</button>
+                        <button onclick="pressNumber('6')">6</button>
+                        <button onclick="chooseOperator('+')">+</button>
+
+                        <button onclick="pressNumber('1')">1</button>
+                        <button onclick="pressNumber('2')">2</button>
+                        <button onclick="pressNumber('3')">3</button>
+                        <button onclick="calculateResult()">=</button>
+
+                        <button onclick="pressNumber('0')">0</button>
+                        <button onclick="pressDecimal()">.</button>
+                    </div>
+                </div>
+
+                <script src="script.js"></script>
+            </body>
+
+            </html>
+
         </div>
     </div>
     <script src="/script.js"></script>

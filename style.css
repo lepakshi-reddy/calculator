@@ -30,3 +30,11 @@ button {
     font-size: 18px;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #cccccc;
+}
+
+button:active {
+    transform: scale(0.96);
+}
