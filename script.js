@@ -1,3 +1,4 @@
+
 const display = document.getElementById("display");
 
 let firstNumber = null;
